@@ -1,1 +1,47 @@
-/* Put your CSS here */
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9ED9CC;
+opacity: 1;
+background-image:  radial-gradient(#FAA094 1.6500000000000001px, transparent 1.6500000000000001px), radial-gradient(#FAA094 1.6500000000000001px, #9ED9CC 1.6500000000000001px);
+background-size: 66px 66px;
+background-position: 0 0,33px 33px;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #FAA094FF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1%;
+    margin-top: 3%;
+}
+
+.btn {
+    background-color:#FFDDE2FF;
+    border: 2px solid; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:#28282B ;
+    outline:none;
+}
+
+.btn:hover {
+border-color: #008C76FF;
+}
