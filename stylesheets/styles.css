@@ -5,12 +5,13 @@
 
 body {
     padding: 0;
+    padding-top: 30%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     background-color: #9ED9CC;
 opacity: 1;
 background-image:  radial-gradient(#FAA094 1.6500000000000001px, transparent 1.6500000000000001px), radial-gradient(#FAA094 1.6500000000000001px, #9ED9CC 1.6500000000000001px);
