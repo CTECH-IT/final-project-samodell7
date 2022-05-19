@@ -71,6 +71,33 @@ function selectOption(option) {
 
 
 const textNodes = [
+    //0.x
+    //0.01
+    {
+        id: 0.01,
+
+        text: 'He literally picks you up and heaves you into oncoming traffic',
+        options: [
+            {
+                text: 'Retry',
+                nextText: -1
+            }
+
+        ]
+
+    },
+    {
+        id: 0.02,
+
+        text: 'Sprit Man hits you in the head with a shovel and uses you for compost',
+        options:[
+            {
+                text: 'RIP, ig',
+                nextText: -1
+            }
+        ]
+    },
+    
     //1
     {
         id: 1,
@@ -110,7 +137,7 @@ const textNodes = [
             },
             {
                 text: 'ye',
-                nextText: 1.03
+                nextText: 0.01
             },
             {
                 text: 'no',
@@ -126,7 +153,7 @@ const textNodes = [
         options: [
             {
                 text: 'I was tho',
-                nextText: 1.03
+                nextText: 0.01
             },
             {
                 text: "It's all good man!",
@@ -139,20 +166,7 @@ const textNodes = [
 
         ]
     },
-    //1.03
-    {
-        id: 1.03,
-
-        text: 'He literally picks you up and heaves you into oncoming traffic',
-        options: [
-            {
-                text: 'Retry',
-                nextText: -1
-            }
-
-        ]
-
-    },
+    
     //1.04
     {
         id: 1.04,
@@ -227,7 +241,7 @@ const textNodes = [
         options: [
             {
                 text: 'no',
-                nextText: 1.03
+                nextText: 0.01
             },
             {
                 text: 'ok deal',
@@ -270,7 +284,7 @@ const textNodes = [
         options: [
             {
                 text: 'That\'s not my na-',
-                nextText: 1.03
+                nextText: 0.01
             },
             {
                 text: 'Chevvy it is',
@@ -291,18 +305,26 @@ const textNodes = [
         options: [
             {
                 text: 'No way I\'m staying here!',
-                nextText: 1.03
+                nextText: 0.01
             },
             {
                 text: 'Again, it\'s no-',
                 nextText: 3
+            },
+            {
+                text: 'Sorry man, I\'ve got something that needs to be done',
+                nextText: 2
             }
         ]
     },
-    //2
+
+
+
+
+    //2 without bob garden
     {
         id: 2,
-        text: 'after escaping Mr. Bob, you reach the local community garden and meet a muscular man with \'Spit\' printed on the side of his head',
+        text: 'after leaving Mr. Bob, you reach the local community garden and meet a muscular man with \'Spit\' printed on the side of his head',
         options: [
             {
                 text: '(Try to greet the Sprit man)',
@@ -313,7 +335,7 @@ const textNodes = [
                 nextText: 2.01
             },
             {
-                text: '(throw trash at the Sprit man)',
+                text: '(Throw trash at the Sprit man)',
                 nextText: 2.01
             },
             {
@@ -338,7 +360,7 @@ const textNodes = [
                 text: 'Would you like $20?',
                 requiredState: (currentState) => currentState.twenty,
                 setState: { twenty: false },
-                nextText: 2.04
+                nextText: 2.05
             }
         ]
     },
@@ -348,17 +370,157 @@ const textNodes = [
         options: [
             {
                 text: 'the beat master? What is wrong with everyone here?',
-                nextText: 5,
-                setState: { twenty: false },
-                setState: { wallet: false },
-                setState: { WAKE: true },
+                nextText: 2.04,
             },
+            {
+                text: 'That\'s... something...',
+                nextText: 2.03
+            }
         ]
+    },
+    {
+        id: 2.03,
+        text: '"Want to help me come garden?"',
+        options: [
+            {
+                text: 'Sure, why not.',
+                nextText: 2.06
+            },
+            {
+                text: 'I mean, honestly, I\'d rather not',
+                nextText: 2.1
+            }
+        ]
+    },
+    {
+        id: 2.04,
+        text: '(he stares intensely at you. Burining your eyes.)',
+        options: [
+            {
+                text:'Wait, please! I\'m sorry',
+                nextText: 2.06
+            },
+            {
+                text:'Are you ok?',
+                nextText: 2.07
+            },
+            {
+                text:'I didn\'t mean to insult you, I apologize.',
+                requiredState: (currentState) => currentState.chevvy,
+                nextText: 2.08
+            }
+        ]
+    },
+    {
+        id: 2.05,
+        text: '"Ahahaha no thanks, mother nature provides all I need"',
+        options: [
+            {
+                text:'Dang. That\'s deep.',
+                nextText: 6
+            },
+            {
+                text:'That\'s kinda dumb',
+                nextText: 0.02
+            }
+        ]
+    },
+    {
+        id: 2.06,
+        text: '(he hands you a shovel)"dig"',
+        options: [
+            {
+                text: 'What am I digging for?',
+                nextText: 2.09
+            },
+            {
+                text: 'Sweeeeeeeet',
+                nextText: 2.09
+            },
+            
+        ]
+    },
+    {
+        id: 2.07,
+        text: '"I\'m more than ok. I\'m gardening HAHAHA!"',
+        options:[
+            {
+                text: 'Yeaaaaaaa...',
+                nextText: 2.1
+            },
+            {
+                text: 'You are one weird dude',
+                nextText: 0.02
+            }
+        ]
+    },
+    {
+        id: 2.08,
+        text: '"Insult me? Chevvy, you could never."',
+        options:[
+        {
+            text: 'How- how do you know about that?',
+            nextText: 5
+        }
+    ]
+    },
+    {
+        id:2.09,
+        text:'"How tall are you?"',
+        options:[
+            {
+                text: 'What?',
+                nextText: 0.02
+            }
+        ]
+    },
+    {
+        id:2.1,
+        text: '"Well, it was nice meeting you. Come back if you ever want to learn my tips and trick of gardening!"',
+        options:[
+            {
+                text: 'That sounds great! Cya.',
+                nextText: 7
+            },
+            {
+                text: 'Gardening kinda dum lowkey',
+                nextText: 2.11
+            }
+        ]
+    },
+    {
+        id:2.11,
+        text: '(He makes a sour face and a eary feeling consumes you)',
+        options:[
+            {
+                text: 'Oops',
+                nextText:.02
+            }
+        ]
+    },
+
+
+
+//3 = with bob
+   {
+        id:3,
+        text: '('
     }
 
 
 
-    //2 = bobless, 3 = with bob, 4 = lunch with bob, special  5 = WAKE UP
+
+//4 lunch with bob ending
+    /*{
+        id: 4,
+    }*/
+
+
+
+//5 the wake up ending (requires to steal the wallet and gain $20 and be without bob)
+
+
+// 0= deaths  1= begging   2 = bobless, 3 = with bob, 4 = Bob ending  5 = WAKE UP, special 6 = Sprit ending  7 = Gingerale
 
 
 
