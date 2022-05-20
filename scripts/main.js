@@ -70,6 +70,7 @@ function selectOption(option) {
 
 
 
+
 const textNodes = [
     //0.x
     //0.01
@@ -126,7 +127,7 @@ const textNodes = [
     {
         id: 1.01,
         x: 2,
-        text: '"DID YOU JUST TAKE MY WALLET??????"',
+        text: '???: "DID YOU JUST TAKE MY WALLET??????"',
         options: [
             {
                 text: "What? I'm sorry I just found it here and was looking for the owner! Here.",
@@ -149,7 +150,7 @@ const textNodes = [
     {
         id: 1.02,
 
-        text: '"Oh shoot. My bad. I thought you were tryna rob me"',
+        text: 'Mr. Bob: "Oh shoot. My bad. I thought you were tryna rob me"',
         options: [
             {
                 text: 'I was tho',
@@ -170,7 +171,7 @@ const textNodes = [
     //1.04
     {
         id: 1.04,
-        text: '"hmmmmm I\'m not sure I trust you"',
+        text: 'Mr. Bob: "hmmmmm I\'m not sure I trust you"',
         options: [
             {
                 text: 'Dude I promise, what\'s your issue?',
@@ -194,7 +195,7 @@ const textNodes = [
     //1.05
     {
         id: 1.05,
-        text: '"YOU DON\'T KNOW ME!! I\'M DR. BOB!!!"',
+        text: 'Mr. Bob: "YOU DON\'T KNOW ME!! I\'M MR. BOB!!!"',
         options: [
             {
                 text: 'weird...',
@@ -220,7 +221,7 @@ const textNodes = [
     //1.07
     {
         id: 1.07,
-        text: '"hmm, good point..."',
+        text: 'Mr. Bob: "hmm, good point..."',
         options: [
             {
                 text: 'I know',
@@ -237,7 +238,7 @@ const textNodes = [
     //1.08
     {
         id: 1.08,
-        text: '"look man, keep the money I just want my wallet"',
+        text: 'Mr. Bob: "look man, keep the money I just want my wallet"',
         options: [
             {
                 text: 'no',
@@ -280,7 +281,7 @@ const textNodes = [
     //1.1
     {
         id: 1.1,
-        text: '"You know, you\'re alright Chevvy"',
+        text: 'Mr. Bob: "You know, you\'re alright Chevvy"',
         options: [
             {
                 text: 'That\'s not my na-',
@@ -301,7 +302,7 @@ const textNodes = [
     //1.11
     {
         id: 1.11,
-        text: '"C\'mon Chevvy, I want to introduce you to a friend"',
+        text: 'Mr. Bob: "C\'mon Chevvy, I want to introduce you to a friend"',
         options: [
             {
                 text: 'No way I\'m staying here!',
@@ -328,7 +329,8 @@ const textNodes = [
         options: [
             {
                 text: '(Try to greet the Sprit man)',
-                nextText: 2.01
+                nextText: 2.01,
+                
             },
             {
                 text: '(Walk past him and say nothing)',
@@ -346,7 +348,7 @@ const textNodes = [
     },
     {
         id: 2.01,
-        text: '"Hello, friend. Wonderful day we\'re blessed with today, isn\'t it?"',
+        text: 'Sprit Man: "Hello, friend. Wonderful day we\'re blessed with today, isn\'t it?"',
         options: [
             {
                 text: 'Why are you so jacked????',
@@ -366,7 +368,7 @@ const textNodes = [
     },
     {
         id:2.02,
-        text: '"I\'m the beat master that\'s why..."',
+        text: 'Sprit Man: "I\'m the beat master that\'s why..."',
         options: [
             {
                 text: 'the beat master? What is wrong with everyone here?',
@@ -380,7 +382,7 @@ const textNodes = [
     },
     {
         id: 2.03,
-        text: '"Want to help me come garden?"',
+        text: 'Sprit Man: "Want to help me come garden?"',
         options: [
             {
                 text: 'Sure, why not.',
@@ -413,7 +415,7 @@ const textNodes = [
     },
     {
         id: 2.05,
-        text: '"Ahahaha no thanks, mother nature provides all I need"',
+        text: 'Sprit Man: "Ahahaha no thanks, mother nature provides all I need"',
         options: [
             {
                 text:'Dang. That\'s deep.',
@@ -442,7 +444,7 @@ const textNodes = [
     },
     {
         id: 2.07,
-        text: '"I\'m more than ok. I\'m gardening HAHAHA!"',
+        text: 'Sprit Man: "I\'m more than ok. I\'m gardening HAHAHA!"',
         options:[
             {
                 text: 'Yeaaaaaaa...',
@@ -456,7 +458,7 @@ const textNodes = [
     },
     {
         id: 2.08,
-        text: '"Insult me? Chevvy, you could never."',
+        text: 'Sprit Man: "Insult me? Chevvy, you could never."',
         options:[
         {
             text: 'How- how do you know about that?',
@@ -466,7 +468,7 @@ const textNodes = [
     },
     {
         id:2.09,
-        text:'"How tall are you?"',
+        text:'Sprit Man: "How tall are you?"',
         options:[
             {
                 text: 'What?',
@@ -476,7 +478,7 @@ const textNodes = [
     },
     {
         id:2.1,
-        text: '"Well, it was nice meeting you. Come back if you ever want to learn my tips and trick of gardening!"',
+        text: 'Sprit Man: "Well then, it was nice meeting you. Come back if you ever want to learn my tips and trick of gardening!"',
         options:[
             {
                 text: 'That sounds great! Cya.',
@@ -504,7 +506,40 @@ const textNodes = [
 //3 = with bob
    {
         id:3,
-        text: '('
+        text: '(You and Mr. Bob walk down the street in silence until reaching the garden center where a ripped dude is working.)',
+        options: [
+            {
+                text: '(try to introduce Mr. Bob)',
+                nextText: 3.01
+            },
+            {
+                text: '(walk quickly past the unusually shredded man)',
+                nextText: 3.01
+            }
+        ]
+    },
+    {
+        id:3.01,
+        text: 'Sprit Man: "Hello Friend"',
+        options: [
+            {
+                text: 'Hey?',
+                nextText: 3.02
+            },
+            {
+                text: 'You good sir, are JACKED.',
+                nextText: 3.03
+            },
+        ]
+    },
+    {
+        id: 3.02,
+        text: '(He reaches to shake your hand but Mr. Bob take it first)',
+        options: [
+            {
+                
+            }
+        ]
     }
 
 
