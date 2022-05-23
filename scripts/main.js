@@ -91,14 +91,25 @@ const textNodes = [
         id: 0.02,
 
         text: 'Sprit Man hits you in the head with a shovel and uses you for compost',
-        options:[
+        options: [
             {
                 text: 'RIP, ig',
                 nextText: -1
             }
         ]
     },
-    
+    {
+        id: 0.03,
+
+        text: 'Sprit Man and Mr. Bob kidnap you and you never escape.',
+        options: [
+            {
+                text: 'Ain no way',
+                nextText: -1
+            }
+        ]
+    },
+
     //1
     {
         id: 1,
@@ -167,7 +178,7 @@ const textNodes = [
 
         ]
     },
-    
+
     //1.04
     {
         id: 1.04,
@@ -330,7 +341,7 @@ const textNodes = [
             {
                 text: '(Try to greet the Sprit man)',
                 nextText: 2.01,
-                
+
             },
             {
                 text: '(Walk past him and say nothing)',
@@ -367,7 +378,7 @@ const textNodes = [
         ]
     },
     {
-        id:2.02,
+        id: 2.02,
         text: 'Sprit Man: "I\'m the beat master that\'s why..."',
         options: [
             {
@@ -399,15 +410,15 @@ const textNodes = [
         text: '(he stares intensely at you. Burining your eyes.)',
         options: [
             {
-                text:'Wait, please! I\'m sorry',
+                text: 'Wait, please! I\'m sorry',
                 nextText: 2.06
             },
             {
-                text:'Are you ok?',
+                text: 'Are you ok?',
                 nextText: 2.07
             },
             {
-                text:'I didn\'t mean to insult you, I apologize.',
+                text: 'I didn\'t mean to insult you, I apologize.',
                 requiredState: (currentState) => currentState.chevvy,
                 nextText: 2.08
             }
@@ -418,11 +429,11 @@ const textNodes = [
         text: 'Sprit Man: "Ahahaha no thanks, mother nature provides all I need"',
         options: [
             {
-                text:'Dang. That\'s deep.',
+                text: 'Dang. That\'s deep.',
                 nextText: 6
             },
             {
-                text:'That\'s kinda dumb',
+                text: 'That\'s kinda dumb',
                 nextText: 0.02
             }
         ]
@@ -439,13 +450,13 @@ const textNodes = [
                 text: 'Sweeeeeeeet',
                 nextText: 2.09
             },
-            
+
         ]
     },
     {
         id: 2.07,
         text: 'Sprit Man: "I\'m more than ok. I\'m gardening HAHAHA!"',
-        options:[
+        options: [
             {
                 text: 'Yeaaaaaaa...',
                 nextText: 2.1
@@ -459,17 +470,17 @@ const textNodes = [
     {
         id: 2.08,
         text: 'Sprit Man: "Insult me? Chevvy, you could never."',
-        options:[
-        {
-            text: 'How- how do you know about that?',
-            nextText: 5
-        }
-    ]
+        options: [
+            {
+                text: 'How- how do you know about that?',
+                nextText: 5
+            }
+        ]
     },
     {
-        id:2.09,
-        text:'Sprit Man: "How tall are you?"',
-        options:[
+        id: 2.09,
+        text: 'Sprit Man: "How tall are you?"',
+        options: [
             {
                 text: 'What?',
                 nextText: 0.02
@@ -477,9 +488,9 @@ const textNodes = [
         ]
     },
     {
-        id:2.1,
+        id: 2.1,
         text: 'Sprit Man: "Well then, it was nice meeting you. Come back if you ever want to learn my tips and trick of gardening!"',
-        options:[
+        options: [
             {
                 text: 'That sounds great! Cya.',
                 nextText: 7
@@ -491,21 +502,21 @@ const textNodes = [
         ]
     },
     {
-        id:2.11,
+        id: 2.11,
         text: '(He makes a sour face and a eary feeling consumes you)',
-        options:[
+        options: [
             {
                 text: 'Oops',
-                nextText:.02
+                nextText: .02
             }
         ]
     },
 
 
 
-//3 = with bob
-   {
-        id:3,
+    //3 = with bob
+    {
+        id: 3,
         text: '(You and Mr. Bob walk down the street in silence until reaching the garden center where a ripped dude is working.)',
         options: [
             {
@@ -519,7 +530,7 @@ const textNodes = [
         ]
     },
     {
-        id:3.01,
+        id: 3.01,
         text: 'Sprit Man: "Hello Friend"',
         options: [
             {
@@ -537,25 +548,192 @@ const textNodes = [
         text: '(He reaches to shake your hand but Mr. Bob take it first)',
         options: [
             {
-                
+                text: '(confront Mr. Bob)',
+                nextText: 0.01
+            },
+            {
+                text: '(just ignore it)',
+                nextText: 3.03
             }
         ]
+    },
+    {
+        id: 3.03,
+        text: 'Mr. Bob: "It\'s great to see you again Sprit Man, this is Chevvy."',
+        options: [
+            {
+                text: 'How do you deal with this guy Mr. Sprit?',
+                nextText: 3.04
+            },
+            {
+                text: 'It\'s not Chevvy',
+                nextText: 3.05
+            }
+        ]
+    },
+    {
+        id: 3.04,
+        text: '(Spit man stares in the distance, almost like he\'s is a trance',
+        options: [
+            {
+                text: 'Sprit Man?',
+                nextText: 3.06
+            },
+            {
+                text: '(Move past the clearly loaded question)',
+                nextText: 3.05
+            },
+            {
+                text: '(slap him out of it)',
+                nextText: 3.07
+            }
+        ]
+    },
+    {
+        id: 3.05,
+        text: 'Mr Sprit: "You shouldn\'t be here, not yet"',
+        options: [
+            {
+                text: 'What? What does that mean?',
+                nextText: 0.03
+            }
+        ]
+    },
+    {
+        id: 3.06,
+        text: 'Sprit Man: "I apologize Chevvy, the truth is... He saved my life."',
+        options: [
+        {
+            text: 'He saved your life?',
+            nextText: 3.08
+        }
+    ]
+    },
+    {
+        id: 3.07,
+        text: 'Sprit Man: "huh what?"',
+        options: [
+            {
+                text: 'I just asked ab-',
+                nextText: 3.09
+            },
+            {
+                text: 'Oh it was nothing, sorry',
+                nextText: 3.1
+            }
+        ]
+    },
+    {
+        id:3.08,
+        text: 'Sprit Man: "Yes indeed, during the great Soda, Juice war."',
+        options: [
+            {
+                text: 'Oh wow, I\'m so sorry',
+                nextText: 3.09
+            },
+            {
+                text: 'I had no idea, I-',
+                nextText: 3.12
+            }
+        ]
+    },
+    {
+        id: 3.09,
+        text: 'Mr. Bob: "I think now\'s a good time for you to leave."',
+        options : [
+            {
+                text: 'I\'m sorry',
+                nextText: 7
+            },
+            {
+                text: 'Nah',
+                nextText: 0.03
+            }
+        ]
+    },
+    {
+        id: 3.1,
+        text: 'Sprit Man: "Hmm... Must\'ve spaced out."',
+        options: [
+            {
+                text: 'It\'s alright.',
+                nextText: 3.09
+            },
+            {
+                text: 'Are you ok?',
+                nextText: 3.11
+            }
+        ]
+    },
+    {
+        id: 3.11,
+        text: 'Mr. Sprit: "No Chevvy, I\'m not. I think you should leave"',
+        options: [
+            {
+                text: 'Alright Mr. Sprit...',
+                nextText: 7
+            }
+        ]
+    },
+    {
+        id:3.12,
+        text: 'Mr. Sprit:"No... You could never know"',
+        options: [
+            {
+                text:'...',
+                nextText: 3.13
+            }
+        ]
+    },
+    {
+        id: 3.13,
+        text: 'Sprit Man: "We were one in the same, Soda and Juice. Judged and punished based on levels of carbination. What kind of world is that?',
+        options: [
+            {
+                text:'so what happened?',
+                nextText: 3.14
+            }
+        ]
+    },
+    {
+        id: 3.14,
+        text: ' Sprit Man: "Look around Chevvy. Where is the juice? Where is the love? I- I had to kill my love, Tropical Punch. All over a petty argument. Who is more refreshing!"',
+        options: [
+            {
+                text:'Mr. Sprit, I-',
+                nextText: 3.15
+            }
+        ]
+    },
+    {
+        id: 3.15,
+        text: '( Sprit Man\'s soft eyes turn to despair) Mr Sprit: "You could never know Chevvy."',
+        options: [
+            {
+                text:'...',
+                nextText: 3.16
+            }
+        ]
+    },
+    {
+        id: 3.16,
+        text: '(Mr. Bobn'
     }
 
 
 
 
-//4 lunch with bob ending
+    //4 lunch with bob ending
     /*{
         id: 4,
     }*/
 
 
 
-//5 the wake up ending (requires to steal the wallet and gain $20 and be without bob)
+    //5 the wake up ending (requires to steal the wallet and gain $20 and be without bob)
 
 
-// 0= deaths  1= begging   2 = bobless, 3 = with bob, 4 = Bob ending  5 = WAKE UP, special 6 = Sprit ending  7 = Gingerale
+    // 0= deaths  1= begging   2 = bobless, 3 = with bob, 4 = Bob ending  5 = WAKE UP, special 6 = Sprit ending  7 = Gingerale
 
 
 
