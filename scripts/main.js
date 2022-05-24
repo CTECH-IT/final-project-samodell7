@@ -540,15 +540,34 @@ const textNodes = [
                 
             }
         ]
-    }
+    },
 
 
 
 
 //4 lunch with bob ending
-    /*{
+    {
         id: 4,
-    }*/
+        text: '(Mr. Bob: So where do you wanna eat?)',
+        options: [
+            {
+                text: 'I need some creamy goodness in my life (go to the ice cream parlor)',
+                nextText: 4.01
+            },
+            {
+                text: "I'm feelin' oriental (go to the Panda Express)",
+                nextText: 4.02
+            },
+            {
+                text: 'I want spaghetti (go to the Italian resturant)',
+                nextText: 4.03
+            },
+            {
+                text: 'I want spaghetti (go to the Italian resturant)',
+                nextText: 4.03
+            },
+        ]
+    },
 
 
 
