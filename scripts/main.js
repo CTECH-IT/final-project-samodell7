@@ -109,6 +109,17 @@ const textNodes = [
             }
         ]
     },
+    {
+        id: 0.04,
+
+        text: 'Soda can shrapnel is sent into your chest and the blast send you down the street. With a 99% survivability rate, you\'re lucky enough to be the 1%',
+        options: [
+            {
+                text: "Awwwww yeaaaa",
+                nextText: -1
+            }
+        ]
+    },
 
     //1
     {
@@ -721,7 +732,11 @@ const textNodes = [
         options:[
             {
                 text:'(get down)',
-                nextText: 0.1
+                nextText: 3.17
+            },
+            {
+                text:'(take the blast cause mama ain raise no chump)',
+                nextText: 0.04
             }
         ]
     },
