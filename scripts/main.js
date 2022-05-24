@@ -697,7 +697,7 @@ const textNodes = [
     },
     {
         id: 3.14,
-        text: ' Sprit Man: "Look around Chevvy. Where is the juice? Where is the love? I- I had to kill my love, Tropical Punch. All over a petty argument. Who is more refreshing!"',
+        text: ' Sprit Man: "Look around Chevvy. Where is the juice? Where is the love? I- I had to kill my love, Tropical Punch, all over a petty argument. Who is more refreshing!"',
         options: [
             {
                 text:'Mr. Sprit, I-',
@@ -707,7 +707,7 @@ const textNodes = [
     },
     {
         id: 3.15,
-        text: '( Sprit Man\'s soft eyes turn to despair) Mr Sprit: "You could never know Chevvy."',
+        text: '(Sprit Man\'s soft eyes turn to despair) Mr Sprit: "You could never know Chevvy."',
         options: [
             {
                 text:'...',
@@ -717,7 +717,13 @@ const textNodes = [
     },
     {
         id: 3.16,
-        text: '(Mr. Bobn'
+        text: '(Sprit Man begins to shake) Mr. Bob: "HE\'S GONNA BLOW!"',
+        options:[
+            {
+                text:'(get down)',
+                nextText: 0.1
+            }
+        ]
     }
 
 
