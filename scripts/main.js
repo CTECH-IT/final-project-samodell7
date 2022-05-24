@@ -120,6 +120,36 @@ const textNodes = [
             }
         ]
     },
+    {
+        id: 0.05,
+        text: 'Congratulations, you\'ve earned the murderer ending!',
+        options: [
+            {
+                text: 'try again',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id: 0.06,
+        text: 'The darkness takes over again... Denial Ending earned',
+        options: [
+            {
+                text: 'Explore the rest of the world',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id:0.07,
+        text: 'You live out the rest of your days in your new world. But is it real? Reality Ending earned',
+        options: [
+            {
+                text: 'Redo reality',
+                nextText: -1
+            }
+        ]
+    },
 
     //1
     {
@@ -740,6 +770,16 @@ const textNodes = [
             }
         ]
     },
+    {
+        id:3.17,
+        text: 'Mr. Bob: "He\'s... dead... what have you done?',
+        options:[
+            {
+                text:'I\'ve killed him, how could I...',
+                nextText: 0.05
+            }
+        ]
+    },
 
 
 
@@ -771,7 +811,110 @@ const textNodes = [
 
 
 
+
     //5 the wake up ending (requires to steal the wallet and gain $20 and be without bob)
+
+    {
+        id: 5,
+        text: '(a hissed voice echos around you)ຟคkē นp ¢hēงงฯ, ຟคkē นp',
+        options: [
+            {
+                text: 'Who said that?',
+                nextText: 5.01
+            },
+            {
+                text: 'Where are you!?',
+                nextText: 5.01
+            }
+        ]
+    },
+    {
+        id: 5.01,
+        text:'(The world around you melts, darkness envelopes you but begins to lighten) ¢hēงงฯ, ¢hēงงฯ, plēคŞē ¢໐๓ē ๖ค¢k',
+        options: [
+            {
+                text: 'I am not Chevvy',
+                nextText: 0.06
+            },
+            {
+                text: 'I am Chevvy',
+                nextText: 5.02
+            }
+        ]
+    },
+    {
+        id: 5.02,
+        text:'The darkness turns to a white, flickering, flourecent light',
+        options: [
+            {
+                text: 'Where am I?',
+                nextText: 5.03
+            }
+        ]
+    },
+    {
+        id: 5.03,
+        text:'"Chevvy, you where in a crash, we thought we lost you!"',
+        options: [
+            {
+                text:'This isn\'t real. Take me back!',
+                nextText: 5.04
+            },
+            {
+                text:'A crash?',
+                nextText: 5.05
+            }
+        ]
+    },
+    {
+        id: 5.04,
+        text: '"Chevvy no! We just got you back!"',
+        options: [
+            {
+                text:'This isn\'t real.',
+                nextText: 0.06
+            },
+            {
+                text:'Back?',
+                nextText: 5.05
+            }
+        ]
+    },
+    {
+        id:5.05,
+        text:'"Yes Chevvy, you where pronounced brain dead at the scene but EMT were able to keep your heart beating"',
+        options: [
+            {
+                text: 'But the sodas, they were so real.',
+                nextText: 5.06
+            }
+        ]
+    },
+    {
+        id:5.06,
+        text: '"Chevvy it\'s so good to see you awake again"',
+        options: [
+            {
+                text: 'The Sodas...',
+                nextText:5.07
+            },
+            {
+                text:' Oh.. yea...',
+                nextText:0.07
+            }
+        ]
+    },
+    {
+        id:5.07,
+        text: '"Chevvy, cheงงฯ, ¢hēงงฯ, n̶o̶o̶o̶o̶o̶o̶!',
+        options: [
+            {
+                text: 'Back into the world you, this time infront of a Gingerale.',
+                nextText: 7
+            }
+        ]
+    },
+
 
 
     // 0= deaths  1= begging   2 = bobless, 3 = with bob, 4 = Bob ending  5 = WAKE UP, special 6 = Sprit ending  7 = Gingerale
