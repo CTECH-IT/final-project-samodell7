@@ -614,7 +614,7 @@ const textNodes = [
     },
     {
         id: 3.04,
-        text: '(Spit man stares in the distance, almost like he\'s is a trance',
+        text: '(Spit man stares in the distance, almost like he\'s is a trance)',
         options: [
             {
                 text: 'Sprit Man?',
