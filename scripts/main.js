@@ -27,7 +27,7 @@ let state = {}
 function startGame() {
 
     state = {}
-    showTextNode(1)
+    showTextNode(.5)
 }
 
 function showTextNode(textNodeIndex) {
@@ -72,6 +72,33 @@ function selectOption(option) {
 
 
 const textNodes = [
+    //Game Menu
+    {
+        id: .5,
+        text: "SODA SIM",
+        options: [
+            {
+                text: 'Play Game',
+                nextText: 1
+            },
+            {
+                text: 'Credits',
+                nextText: .6
+            }
+        ]
+    },
+    {
+        id: .6,
+        text: "Game by Lawton Peng and Sam Odell.",
+        options: [
+            {
+                text: 'back',
+                nextText: .5
+            }
+        ]
+    },
+
+
     //0.x
     //0.01
     {
@@ -112,7 +139,7 @@ const textNodes = [
     {
         id: 0.04,
 
-        text: 'Soda can shrapnel is sent into your chest and the blast send you down the street. With a 99% survivability rate, you\'re lucky enough to be the 1%',
+        text: 'Soda can shrapnel is sent into your chest and the blast sends you down the street. With a 99% survivability rate, you\'re lucky enough to be the 1%',
         options: [
             {
                 text: "Awwwww yeaaaa",
@@ -141,7 +168,7 @@ const textNodes = [
         ]
     },
     {
-        id:0.07,
+        id: 0.07,
         text: 'You live out the rest of your days in your new world. But is it real? Reality Ending earned',
         options: [
             {
@@ -150,6 +177,72 @@ const textNodes = [
             }
         ]
     },
+    {
+        id: 0.08,
+        text: 'You leave Sprit Man and live the rest of your life weak and boring. The most boring ending possible earned. Congrats Ig',
+        options: [
+            {
+                text: 'Try for a decent ending',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id: 0.09,
+        text:'The drink causes you to foam at the mouth and die',
+        options: [
+            {
+                text: 'Crap',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id: 0.1,
+        text: 'You and Sprit Man Accomplish his goal. The two of you save the earth from deforestation and global warming. Savior Ending earned.',
+        options: [
+            {
+                text: 'That was a pretty good ending',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id: 0.11,
+        text: 'He clocks you in the temple and you die. Did you forget your right isn\'t his right??',
+        options: [
+            {
+                text: 'Ya oops',
+                nextText: -1
+            },
+            {
+                text: 'Nah I thought he was just lying',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id:0.12,
+        text: 'No shot you thought that would actually work. Smooch ending earned',
+        options: [
+            {
+                text: 'I\'m the best',
+                nextText: -1
+            }
+        ]
+    },
+
+    {
+        id:0.13,
+        text: 'Moving at incredible speeds, be dodges your attack and delivers a punishing upper cut',
+        options: [
+            {
+                text: 'No way I just died like that',
+                nextText: -1
+            }
+        ]
+    },
+
 
     //1
     {
@@ -644,11 +737,11 @@ const textNodes = [
         id: 3.06,
         text: 'Sprit Man: "I apologize Chevvy, the truth is... He saved my life."',
         options: [
-        {
-            text: 'He saved your life?',
-            nextText: 3.08
-        }
-    ]
+            {
+                text: 'He saved your life?',
+                nextText: 3.08
+            }
+        ]
     },
     {
         id: 3.07,
@@ -665,7 +758,7 @@ const textNodes = [
         ]
     },
     {
-        id:3.08,
+        id: 3.08,
         text: 'Sprit Man: "Yes indeed, during the great Soda, Juice war."',
         options: [
             {
@@ -681,7 +774,7 @@ const textNodes = [
     {
         id: 3.09,
         text: 'Mr. Bob: "I think now\'s a good time for you to leave."',
-        options : [
+        options: [
             {
                 text: 'I\'m sorry',
                 nextText: 7
@@ -717,11 +810,11 @@ const textNodes = [
         ]
     },
     {
-        id:3.12,
+        id: 3.12,
         text: 'Mr. Sprit:"No... You could never know"',
         options: [
             {
-                text:'...',
+                text: '...',
                 nextText: 3.13
             }
         ]
@@ -731,7 +824,7 @@ const textNodes = [
         text: 'Sprit Man: "We were one in the same, Soda and Juice. Judged and punished based on levels of carbination. What kind of world is that?',
         options: [
             {
-                text:'so what happened?',
+                text: 'so what happened?',
                 nextText: 3.14
             }
         ]
@@ -741,7 +834,7 @@ const textNodes = [
         text: ' Sprit Man: "Look around Chevvy. Where is the juice? Where is the love? I- I had to kill my love, Tropical Punch, all over a petty argument. Who is more refreshing!"',
         options: [
             {
-                text:'Mr. Sprit, I-',
+                text: 'Mr. Sprit, I-',
                 nextText: 3.15
             }
         ]
@@ -751,7 +844,7 @@ const textNodes = [
         text: '(Sprit Man\'s soft eyes turn to despair) Mr Sprit: "You could never know Chevvy."',
         options: [
             {
-                text:'...',
+                text: '...',
                 nextText: 3.16
             }
         ]
@@ -759,23 +852,23 @@ const textNodes = [
     {
         id: 3.16,
         text: '(Sprit Man begins to shake) Mr. Bob: "HE\'S GONNA BLOW!"',
-        options:[
+        options: [
             {
-                text:'(get down)',
+                text: '(get down)',
                 nextText: 3.17
             },
             {
-                text:'(take the blast cause mama ain raise no chump)',
+                text: '(take the blast cause mama ain raise no chump)',
                 nextText: 0.04
             }
         ]
     },
     {
-        id:3.17,
+        id: 3.17,
         text: 'Mr. Bob: "He\'s... dead... what have you done?',
-        options:[
+        options: [
             {
-                text:'I\'ve killed him, how could I...',
+                text: 'I\'ve killed him, how could I...',
                 nextText: 0.05
             }
         ]
@@ -785,7 +878,7 @@ const textNodes = [
 
 
 
-//4 lunch with bob ending
+    //4 lunch with bob ending
     {
         id: 4,
         text: '(Mr. Bob: So where do you wanna eat?)',
@@ -830,7 +923,7 @@ const textNodes = [
     },
     {
         id: 5.01,
-        text:'(The world around you melts, darkness envelopes you but begins to lighten) ¢hēงงฯ, ¢hēงงฯ, plēคŞē ¢໐๓ē ๖ค¢k',
+        text: '(The world around you melts, darkness envelopes you but begins to lighten) ¢hēงงฯ, ¢hēงงฯ, plēคŞē ¢໐๓ē ๖ค¢k',
         options: [
             {
                 text: 'I am not Chevvy',
@@ -844,7 +937,7 @@ const textNodes = [
     },
     {
         id: 5.02,
-        text:'The darkness turns to a white, flickering, flourecent light',
+        text: 'The darkness turns to a white, flickering, flourecent light',
         options: [
             {
                 text: 'Where am I?',
@@ -854,14 +947,14 @@ const textNodes = [
     },
     {
         id: 5.03,
-        text:'"Chevvy, you where in a crash, we thought we lost you!"',
+        text: '"Chevvy, you where in a crash, we thought we lost you!"',
         options: [
             {
-                text:'This isn\'t real. Take me back!',
+                text: 'This isn\'t real. Take me back!',
                 nextText: 5.04
             },
             {
-                text:'A crash?',
+                text: 'A crash?',
                 nextText: 5.05
             }
         ]
@@ -871,18 +964,18 @@ const textNodes = [
         text: '"Chevvy no! We just got you back!"',
         options: [
             {
-                text:'This isn\'t real.',
+                text: 'This isn\'t real.',
                 nextText: 0.06
             },
             {
-                text:'Back?',
+                text: 'Back?',
                 nextText: 5.05
             }
         ]
     },
     {
-        id:5.05,
-        text:'"Yes Chevvy, you where pronounced brain dead at the scene but EMT were able to keep your heart beating"',
+        id: 5.05,
+        text: '"Yes Chevvy, you where pronounced brain dead at the scene but EMT were able to keep your heart beating"',
         options: [
             {
                 text: 'But the sodas, they were so real.',
@@ -891,21 +984,21 @@ const textNodes = [
         ]
     },
     {
-        id:5.06,
+        id: 5.06,
         text: '"Chevvy it\'s so good to see you awake again"',
         options: [
             {
                 text: 'The Sodas...',
-                nextText:5.07
+                nextText: 5.07
             },
             {
-                text:' Oh.. yea...',
-                nextText:0.07
+                text: ' Oh.. yea...',
+                nextText: 0.07
             }
         ]
     },
     {
-        id:5.07,
+        id: 5.07,
         text: '"Chevvy, cheงงฯ, ¢hēงงฯ, n̶o̶o̶o̶o̶o̶o̶!',
         options: [
             {
@@ -915,6 +1008,234 @@ const textNodes = [
         ]
     },
 
+    //6 Sprit Endind
+    {
+        id: 6,
+        text: 'Sprit Man: "I can teach you if you want"',
+        options: [
+            {
+                text: 'Teach me? Teach me what?',
+                nextText: 6.01
+            },
+            {
+                text: 'Nah I\'m good just impressed',
+                nextText: 6.02
+            }
+        ]
+    },
+    {
+        id: 6.01,
+        text: 'Sprit Man: "TO GET THIS YOLKED!"',
+        options: [
+            {
+                text: 'Oh bettt',
+                nextText: 6.03
+            },
+            {
+                text: 'Ya know, thanks but I\'ll have to pass',
+                nextText: 6.02
+            }
+        ]
+    },
+    {
+        id: 6.02,
+        text: 'Sprit Man: "Suit yourself"',
+        options: [
+            {
+                text: 'Sorry man, another time maybe',
+                nextText: 0.08
+            }
+        ]
+    },
+    {
+        id: 6.03,
+        text: 'Sprit Man: "Drink this!" (he hand you a glass of purple liquid)',
+        options: [
+            {
+                text: 'I have this thing, I don\'t drink random fluid from strangers',
+                nextText: 6.04
+            },
+            {
+                text: 'Sure thing!',
+                nextText:.09
+            }
+        ]
+    },
+    {
+        id: 6.04,
+        text: 'Sprit Man: "Smart rule. This is grape juice though" (he offers a different glass)',
+        options: [
+            {
+                text: 'Ehhh, I\'ll have to pass.',
+                nextText:6.02
+            },
+            {
+                text: 'Say less',
+                nextText:6.05
+            }
+        ]
+    },
+    {
+        id:6.05,
+        text: 'You guzzle the glass down and begin feeling blood course throughout your body',
+        options: [
+            {
+                text: 'Whoa',
+                nextText: 6.06
+            }
+        ]
+    },
+    {
+        id:6.06,
+        text: 'Sprit Man: "Good isn\'t it?"',
+        options: [
+            {
+                text: 'I feel... god-like',
+                nextText: 6.07
+            },
+            {
+                text: 'What was that stuff?',
+                nextText: 6.08
+            }
+        ]
+    },
+    {
+        id:6.07,
+        text: 'Sprit Man: "Join me, I plan to replant the earth and need people with the physique of titans like yourself"',
+        options:[
+            {
+                text: 'I- I can\'t. I\'m sorry',
+                nextText: 6.09
+            },
+            {
+                text: 'I would be glad to',
+                nextText: 0.1
+            }
+        ]
+    },
+    {
+        id: 6.08,
+        text: 'Sprit Man: "Does it matter?"',
+        options: [
+            {
+                text: 'Yes, I have to know',
+                nextText: 6.09
+            },
+            {
+                text: 'I guess not. Imma beef cake',
+                nextText: 6.07
+            }
+        ]
+    },
+    {
+        id: 6.09,
+        text: 'Sprit Man: "We could have been so successful, so happy. But you had to be subborn"',
+        options: [
+            {
+                text: 'What was that drink?',
+                nextText: 6.1
+            },
+            {
+                text: 'Your not going to get away with this!',
+                nextText: 6.11
+            }
+        ]
+    },
+    {
+        id:6.1,
+        text: 'Sprit Man: "It was truely grape juice, taken from the only juice box left alive"',
+        options: [
+            {
+                text: 'you monster!',
+                nextText: 6.12
+            },
+            {
+                text: 'Lung at him',
+                nextText: 6.13
+            },
+            {
+                text: 'Meh',
+                nextText: 0.1
+            }
+        ]
+    },
+    {
+        id: 6.11,
+        text: 'Sprit Man: "Planting enough trees to save the earth?"',
+        options: [
+            {
+                text: 'Yes I mean no, the part about you being a monster',
+                nextText: 6.12
+            },
+            {
+                text: 'When you put it that way',
+                nextText: 0.1
+            }
+        ]
+    },
+    {
+        id: 6.12,
+        text: 'Sprit Man: "I am not proud of what i\'ve done, but it was a necessary evil." (He attacks at you)',
+        options: [
+            {
+                text: 'Wait no, I\'ll help you!',
+                nextText: 0.1
+            },
+            {
+                text: 'Prepare to fight',
+                nextText: 6.13
+            }
+        ]
+    },
+    {
+        id: 6.13,
+        text: '(Sprit Man telegraphs a right hook)',
+        options: [
+            {
+                text: 'Block Left',
+                nextText: 6.14
+            },
+            {
+                text: 'Block Right',
+                nextText: 0.11
+            }
+        ]
+    },
+    {
+        id: 6.14,
+        text: 'The momentum leaves him defenseless for a second',
+        options: [
+            {
+                text: 'Give him a smooch',
+                nextText: 6.15
+            },
+            {
+                text: 'Attack him',
+                nextText: 0.13
+            }
+        ]
+    },
+    {
+        id: 6.15,
+        text: 'Sprit Man: "Whoah, I realize the errors of my ways."',
+        options: [
+            {
+                text: 'You can do better',
+                nextText: 6.16
+            },
+        ]
+    },
+    {
+        id: 6.16,
+        text: 'Sprit Man: "You\'re right!" (He frees the juice box and build 23 school\'s and hospitals in impoverished nations)',
+        options: [
+            {
+                text: 'I did a great thing',
+                nextText: 0.12
+            }
+        ]
+    }
+    
 
 
     // 0= deaths  1= begging   2 = bobless, 3 = with bob, 4 = Bob ending  5 = WAKE UP, special 6 = Sprit ending  7 = Gingerale
