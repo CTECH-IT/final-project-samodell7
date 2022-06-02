@@ -1427,6 +1427,8 @@ const textNodes = [
 
 
         ]
-
+    },
 
 startGame()
+
+]
