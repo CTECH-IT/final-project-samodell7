@@ -881,7 +881,7 @@ const textNodes = [
     //4 lunch with bob ending
     {
         id: 4,
-        text: '(Mr. Bob: So where do you wanna eat?)',
+        text: 'Mr. Bob: So where do you wanna eat?',
         options: [
             {
                 text: 'I need some creamy goodness in my life (go to the ice cream parlor)',
@@ -896,14 +896,45 @@ const textNodes = [
                 nextText: 4.03
             },
             {
-                text: 'I want spaghetti (go to the Italian resturant)',
-                nextText: 4.03
-            },
-        ]
-    },
-
-
-
+            id: 4.01,
+            text: 'Mr.Bob: I\'m lactose intolerant',
+            options: [
+                {
+                    text: 'How does that even work',
+                    nextText: 4
+                }
+            ]
+        },
+        {
+            id: 4.02,
+            text: 'Mr. Bob: Msg gives me a headache',
+            options: [
+                {
+                    text: 'You don\'t have a head',
+                    nextText: 4
+                },
+            ]
+        },
+        {
+            id: 4.03,
+            text: 'Mr. Bob: I know a great Italian place just down the road',
+            options: [
+                {
+                    text: 'Sounds great!',
+                    nextText: 4.04
+                },
+            ]
+        },
+        {
+            id: 4.04,
+            text: 'You and Bob walk to the resturant making small talk as you walk',
+            options: [
+                {
+                    text: '...',
+                    nextText: 4.05
+                },
+            ]
+        },
 
     //5 the wake up ending (requires to steal the wallet and gain $20 and be without bob)
 
