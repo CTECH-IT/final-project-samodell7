@@ -252,6 +252,30 @@ const textNodes = [
             }
         ]
     },
+    {
+        id: .015,
+        text: 'You instantly get arrested and rot in prison',
+        options: [
+            {
+                text: 'dang it',
+                nextText: -1
+            }
+        ]
+    },
+    {
+        id: .16,
+        text: 'He walks away and leaves you all alone. Hurt Feelings ending earned.',
+        options: [
+            {
+                text: 'accept it',
+                nextText: -1
+            },
+            {
+                text: 'JUST SMACK HIM PLEASE',
+                nextText: .15
+            }
+        ]
+    },
 
 
     //1
@@ -905,530 +929,563 @@ const textNodes = [
                 text: 'I want spaghetti (go to the Italian resturant)',
                 nextText: 4.03
             },
+        ]
+    },
+    {
+        id: 4.01,
+        text: 'Mr.Bob: I\'m lactose intolerant',
+        options: [
             {
-                id: 4.01,
-                text: 'Mr.Bob: I\'m lactose intolerant',
-                options: [
-                    {
-                        text: 'How does that even work',
-                        nextText: 4
-                    }
-                ]
-            },
-            {
-                id: 4.02,
-                text: 'Mr. Bob: Msg gives me a headache',
-                options: [
-                    {
-                        text: 'You don\'t have a head',
-                        nextText: 4
-                    },
-                ]
-            },
-            {
-                id: 4.03,
-                text: 'Mr. Bob: I know a great Italian place just down the road',
-                options: [
-                    {
-                        text: 'Sounds great!',
-                        nextText: 4.04
-                    },
-                ]
-            },
-            {
-                id: 4.04,
-                text: 'You and Bob walk to the restaurant making small talk as you walk',
-                options: [
-                    {
-                        text: '...',
-                        nextText: 4.05
-                    },
-                ]
-            },
-            {
-                id: 4.05,
-                text: 'You and Bob arrive at a resturant called Spirit of Italy',
-                options: [
-                    {
-                        text: '...',
-                        nextText: 4.06
-                    },
-                ]
-            },
-            {
-                id: 4.06,
-                text: 'Bob rushes ahead, almost pushing you over, and holds the door for you before you can even grab it',
-                options: [
-                    {
-                        text: 'Thanks...',
-                        nextText: 4.06
-                    },
-                ]
-            },
-            {
-                id: 4.06,
-                text: '(You\'re both seated by the waiter and handed a menu)',
-                options: [
-                    {
-                        text: '...',
-                        nextText: 4.07
-                    },
-                ]
-            },
-            {
-                id: 4.06,
-                text: '(You\'re both seated by the waiter and handed a menu)',
-                options: [
-                    {
-                        text: '...',
-                        nextText: 4.07
-                    },
-                ]
-            },
-            {
-                id: 4.07,
-                text: 'Mr.Bob: I\'d really recommend the spaghetti here',
-                options: [
-                    {
-                        text: '(Order the spaghetti)',
-                        nextText: 4.08
-                    },
-                    {
-                        text: '(Don\'t)',
-                        nextText: 4.09
-                    },
-                ]
-            },
-            {
-
-                id: 4.09,
-                text: 'You both awkwardly stare at eachother',
-                options: [
-                    {
-                        text: 'So lovely day we\'re having huh',
-                        nextText: 4.1
-                    },
-                    {
-                        text: 'Crazy day so far',
-                        nextText: 4.11
-                    },
-
-                ]
-            },
-            {
-                id: 4.08,
-                text: 'You awkwardly slurp noodles while Mr.Bob stares at you',
-                options: [
-                    {
-                        text: 'So lovely day we\'re having huh',
-                        nextText: 4.1
-                    },
-                    {
-                        text: 'Crazy day so far',
-                        nextText: 4.11
-                    },
-                ]
-            },
-            {
-                id: 4.1,
-                text: 'Mr. Bob: I guess didn\'t really notice',
-                options: [
-                    {
-                        text: '...',
-                        nextText: 4.12
-                    },
-                ]
-            },
-            {
-                id: 4.11,
-                text: 'Mr.Bob: Pretty standard for me',
-                options: [
-                    {
-                        text: '...',
-                        nextText: 4.12
-
-                    },
-                ]
-            },
-            {
-                id: 4.12,
-                text: '...',
-                options: [
-                    {
-                        text: '...',
-                        nextText: 4.13
-
-                    },
-                ]
-            },
-            {
-                id: 4.13,
-                text: 'Hey listen, I\'ve had a great time and all, but I got to get going',
-                options: [
-                    {
-                        text: 'Hey Wait! Will I ever get to see you again?',
-                        nextText: 4.14
-
-                    },
-                ]
-            },
-            {
-                id: 4.14,
-                text: '(Bob turns to you and gives what you only can assume to be a wink and walks off into the sunset',
-                options: [
-                    {
-                        text: 'I\'ll never forget you...',
-                        nextText: 4.14
-
-                    },
-                ]
-            },
-            
-
-
-
-
-            //5 the wake up ending (requires to steal the wallet and gain $20 and be without bob)
-
-            {
-                id: 5,
-                text: '(a hissed voice echos around you)ຟคkē นp ¢hēงงฯ, ຟคkē นp',
-                options: [
-                    {
-                        text: 'Who said that?',
-                        nextText: 5.01
-                    },
-                    {
-                        text: 'Where are you!?',
-                        nextText: 5.01
-                    }
-                ]
-            },
-            {
-                id: 5.01,
-                text: '(The world around you melts, darkness envelopes you but begins to lighten) ¢hēงงฯ, ¢hēงงฯ, plēคŞē ¢໐๓ē ๖ค¢k',
-                options: [
-                    {
-                        text: 'I am not Chevvy',
-                        nextText: 0.06
-                    },
-                    {
-                        text: 'I am Chevvy',
-                        nextText: 5.02
-                    }
-                ]
-            },
-            {
-                id: 5.02,
-                text: 'The darkness turns to a white, flickering, flourecent light',
-                options: [
-                    {
-                        text: 'Where am I?',
-                        nextText: 5.03
-                    }
-                ]
-            },
-            {
-                id: 5.03,
-                text: '"Chevvy, you where in a crash, we thought we lost you!"',
-                options: [
-                    {
-                        text: 'This isn\'t real. Take me back!',
-                        nextText: 5.04
-                    },
-                    {
-                        text: 'A crash?',
-                        nextText: 5.05
-                    }
-                ]
-            },
-            {
-                id: 5.04,
-                text: '"Chevvy no! We just got you back!"',
-                options: [
-                    {
-                        text: 'This isn\'t real.',
-                        nextText: 0.06
-                    },
-                    {
-                        text: 'Back?',
-                        nextText: 5.05
-                    }
-                ]
-            },
-            {
-                id: 5.05,
-                text: '"Yes Chevvy, you where pronounced brain dead at the scene but EMT were able to keep your heart beating"',
-                options: [
-                    {
-                        text: 'But the sodas, they were so real.',
-                        nextText: 5.06
-                    }
-                ]
-            },
-            {
-                id: 5.06,
-                text: '"Chevvy it\'s so good to see you awake again"',
-                options: [
-                    {
-                        text: 'The Sodas...',
-                        nextText: 5.07
-                    },
-                    {
-                        text: ' Oh.. yea...',
-                        nextText: 0.07
-                    }
-                ]
-            },
-            {
-                id: 5.07,
-                text: '"Chevvy, cheงงฯ, ¢hēงงฯ, n̶o̶o̶o̶o̶o̶o̶!',
-                options: [
-                    {
-                        text: 'Back into the world you, this time infront of a Gingerale.',
-                        nextText: 7
-                    }
-                ]
-            },
-
-            //6 Sprit Endind
-            {
-                id: 6,
-                text: 'Sprit Man: "I can teach you if you want"',
-                options: [
-                    {
-                        text: 'Teach me? Teach me what?',
-                        nextText: 6.01
-                    },
-                    {
-                        text: 'Nah I\'m good just impressed',
-                        nextText: 6.02
-                    }
-                ]
-            },
-            {
-                id: 6.01,
-                text: 'Sprit Man: "TO GET THIS YOLKED!"',
-                options: [
-                    {
-                        text: 'Oh bettt',
-                        nextText: 6.03
-                    },
-                    {
-                        text: 'Ya know, thanks but I\'ll have to pass',
-                        nextText: 6.02
-                    }
-                ]
-            },
-            {
-                id: 6.02,
-                text: 'Sprit Man: "Suit yourself"',
-                options: [
-                    {
-                        text: 'Sorry man, another time maybe',
-                        nextText: 0.08
-                    }
-                ]
-            },
-            {
-                id: 6.03,
-                text: 'Sprit Man: "Drink this!" (he hand you a glass of purple liquid)',
-                options: [
-                    {
-                        text: 'I have this thing, I don\'t drink random fluid from strangers',
-                        nextText: 6.04
-                    },
-                    {
-                        text: 'Sure thing!',
-                        nextText: .09
-                    }
-                ]
-            },
-            {
-                id: 6.04,
-                text: 'Sprit Man: "Smart rule. This is grape juice though" (he offers a different glass)',
-                options: [
-                    {
-                        text: 'Ehhh, I\'ll have to pass.',
-                        nextText: 6.02
-                    },
-                    {
-                        text: 'Say less',
-                        nextText: 6.05
-                    }
-                ]
-            },
-            {
-                id: 6.05,
-                text: 'You guzzle the glass down and begin feeling blood course throughout your body',
-                options: [
-                    {
-                        text: 'Whoa',
-                        nextText: 6.06
-                    }
-                ]
-            },
-            {
-                id: 6.06,
-                text: 'Sprit Man: "Good isn\'t it?"',
-                options: [
-                    {
-                        text: 'I feel... god-like',
-                        nextText: 6.07
-                    },
-                    {
-                        text: 'What was that stuff?',
-                        nextText: 6.08
-                    }
-                ]
-            },
-            {
-                id: 6.07,
-                text: 'Sprit Man: "Join me, I plan to replant the earth and need people with the physique of titans like yourself"',
-                options: [
-                    {
-                        text: 'I- I can\'t. I\'m sorry',
-                        nextText: 6.09
-                    },
-                    {
-                        text: 'I would be glad to',
-                        nextText: 0.1
-                    }
-                ]
-            },
-            {
-                id: 6.08,
-                text: 'Sprit Man: "Does it matter?"',
-                options: [
-                    {
-                        text: 'Yes, I have to know',
-                        nextText: 6.09
-                    },
-                    {
-                        text: 'I guess not. Imma beef cake',
-                        nextText: 6.07
-                    }
-                ]
-            },
-            {
-                id: 6.09,
-                text: 'Sprit Man: "We could have been so successful, so happy. But you had to be subborn"',
-                options: [
-                    {
-                        text: 'What was that drink?',
-                        nextText: 6.1
-                    },
-                    {
-                        text: 'Your not going to get away with this!',
-                        nextText: 6.11
-                    }
-                ]
-            },
-            {
-                id: 6.1,
-                text: 'Sprit Man: "It was truely grape juice, taken from the only juice box left alive"',
-                options: [
-                    {
-                        text: 'you monster!',
-                        nextText: 6.12
-                    },
-                    {
-                        text: 'Lung at him',
-                        nextText: 6.13
-                    },
-                    {
-                        text: 'Meh',
-                        nextText: 0.1
-                    }
-                ]
-            },
-            {
-                id: 6.11,
-                text: 'Sprit Man: "Planting enough trees to save the earth?"',
-                options: [
-                    {
-                        text: 'Yes I mean no, the part about you being a monster',
-                        nextText: 6.12
-                    },
-                    {
-                        text: 'When you put it that way',
-                        nextText: 0.1
-                    }
-                ]
-            },
-            {
-                id: 6.12,
-                text: 'Sprit Man: "I am not proud of what i\'ve done, but it was a necessary evil." (He attacks at you)',
-                options: [
-                    {
-                        text: 'Wait no, I\'ll help you!',
-                        nextText: 0.1
-                    },
-                    {
-                        text: 'Prepare to fight',
-                        nextText: 6.13
-                    }
-                ]
-            },
-            {
-                id: 6.13,
-                text: '(Sprit Man telegraphs a right hook)',
-                options: [
-                    {
-                        text: 'Block Left',
-                        nextText: 6.14
-                    },
-                    {
-                        text: 'Block Right',
-                        nextText: 0.11
-                    }
-                ]
-            },
-            {
-                id: 6.14,
-                text: 'The momentum leaves him defenseless for a second',
-                options: [
-                    {
-                        text: 'Give him a smooch',
-                        nextText: 6.15
-                    },
-                    {
-                        text: 'Attack him',
-                        nextText: 0.13
-                    }
-                ]
-            },
-            {
-                id: 6.15,
-                text: 'Sprit Man: "Whoah, I realize the errors of my ways."',
-                options: [
-                    {
-                        text: 'You can do better',
-                        nextText: 6.16
-                    },
-                ]
-            },
-            {
-                id: 6.16,
-                text: 'Sprit Man: "You\'re right!" (He frees the juice box and build 23 school\'s and hospitals in impoverished nations)',
-                options: [
-                    {
-                        text: 'I did a great thing',
-                        nextText: 0.12
-                    }
-                ]
+                text: 'How does that even work',
+                nextText: 4
             }
+        ]
+    },
+    {
+        id: 4.02,
+        text: 'Mr. Bob: Msg gives me a headache',
+        options: [
+            {
+                text: 'You don\'t have a head',
+                nextText: 4
+            },
+        ]
+    },
+    {
+        id: 4.03,
+        text: 'Mr. Bob: I know a great Italian place just down the road',
+        options: [
+            {
+                text: 'Sounds great!',
+                nextText: 4.04
+            },
+        ]
+    },
+    {
+        id: 4.04,
+        text: 'You and Bob walk to the restaurant making small talk as you walk',
+        options: [
+            {
+                text: '...',
+                nextText: 4.05
+            },
+        ]
+    },
+    {
+        id: 4.05,
+        text: 'You and Bob arrive at a resturant called Spirit of Italy',
+        options: [
+            {
+                text: '...',
+                nextText: 4.06
+            },
+        ]
+    },
+    {
+        id: 4.06,
+        text: 'Bob rushes ahead, almost pushing you over, and holds the door for you before you can even grab it',
+        options: [
+            {
+                text: 'Thanks...',
+                nextText: 4.06
+            },
+        ]
+    },
+    {
+        id: 4.06,
+        text: '(You\'re both seated by the waiter and handed a menu)',
+        options: [
+            {
+                text: '...',
+                nextText: 4.07
+            },
+        ]
+    },
+    {
+        id: 4.06,
+        text: '(You\'re both seated by the waiter and handed a menu)',
+        options: [
+            {
+                text: '...',
+                nextText: 4.07
+            },
+        ]
+    },
+    {
+        id: 4.07,
+        text: 'Mr.Bob: I\'d really recommend the spaghetti here',
+        options: [
+            {
+                text: '(Order the spaghetti)',
+                nextText: 4.08
+            },
+            {
+                text: '(Don\'t)',
+                nextText: 4.09
+            },
+        ]
+    },
+    {
 
-
-
-            // 0= deaths  1= begging   2 = bobless, 3 = with bob, 4 = Bob ending  5 = WAKE UP, special 6 = Sprit ending  7 = Gingerale
-
-
-
+        id: 4.09,
+        text: 'You both awkwardly stare at eachother',
+        options: [
+            {
+                text: 'So lovely day we\'re having huh',
+                nextText: 4.1
+            },
+            {
+                text: 'Crazy day so far',
+                nextText: 4.11
+            },
 
         ]
     },
+    {
+        id: 4.08,
+        text: 'You awkwardly slurp noodles while Mr.Bob stares at you',
+        options: [
+            {
+                text: 'So lovely day we\'re having huh',
+                nextText: 4.1
+            },
+            {
+                text: 'Crazy day so far',
+                nextText: 4.11
+            },
+        ]
+    },
+    {
+        id: 4.1,
+        text: 'Mr. Bob: I guess didn\'t really notice',
+        options: [
+            {
+                text: '...',
+                nextText: 4.12
+            },
+        ]
+    },
+    {
+        id: 4.11,
+        text: 'Mr.Bob: Pretty standard for me',
+        options: [
+            {
+                text: '...',
+                nextText: 4.12
+
+            },
+        ]
+    },
+    {
+        id: 4.12,
+        text: '...',
+        options: [
+            {
+                text: '...',
+                nextText: 4.13
+
+            },
+        ]
+    },
+    {
+        id: 4.13,
+        text: 'Hey listen, I\'ve had a great time and all, but I got to get going',
+        options: [
+            {
+                text: 'Hey Wait! Will I ever get to see you again?',
+                nextText: 4.14
+
+            },
+        ]
+    },
+    {
+        id: 4.14,
+        text: '(Bob turns to you and gives what you only can assume to be a wink and walks off into the sunset',
+        options: [
+            {
+                text: 'I\'ll never forget you...',
+                nextText: 4.14
+
+            },
+        ]
+    },
+
+
+
+
+
+    //5 the wake up ending (requires to steal the wallet and gain $20 and be without bob)
+
+    {
+        id: 5,
+        text: '(a hissed voice echos around you)ຟคkē นp ¢hēงงฯ, ຟคkē นp',
+        options: [
+            {
+                text: 'Who said that?',
+                nextText: 5.01
+            },
+            {
+                text: 'Where are you!?',
+                nextText: 5.01
+            }
+        ]
+    },
+    {
+        id: 5.01,
+        text: '(The world around you melts, darkness envelopes you but begins to lighten) ¢hēงงฯ, ¢hēงงฯ, plēคŞē ¢໐๓ē ๖ค¢k',
+        options: [
+            {
+                text: 'I am not Chevvy',
+                nextText: 0.06
+            },
+            {
+                text: 'I am Chevvy',
+                nextText: 5.02
+            }
+        ]
+    },
+    {
+        id: 5.02,
+        text: 'The darkness turns to a white, flickering, flourecent light',
+        options: [
+            {
+                text: 'Where am I?',
+                nextText: 5.03
+            }
+        ]
+    },
+    {
+        id: 5.03,
+        text: '"Chevvy, you where in a crash, we thought we lost you!"',
+        options: [
+            {
+                text: 'This isn\'t real. Take me back!',
+                nextText: 5.04
+            },
+            {
+                text: 'A crash?',
+                nextText: 5.05
+            }
+        ]
+    },
+    {
+        id: 5.04,
+        text: '"Chevvy no! We just got you back!"',
+        options: [
+            {
+                text: 'This isn\'t real.',
+                nextText: 0.06
+            },
+            {
+                text: 'Back?',
+                nextText: 5.05
+            }
+        ]
+    },
+    {
+        id: 5.05,
+        text: '"Yes Chevvy, you where pronounced brain dead at the scene but EMT were able to keep your heart beating"',
+        options: [
+            {
+                text: 'But the sodas, they were so real.',
+                nextText: 5.06
+            }
+        ]
+    },
+    {
+        id: 5.06,
+        text: '"Chevvy it\'s so good to see you awake again"',
+        options: [
+            {
+                text: 'The Sodas...',
+                nextText: 5.07
+            },
+            {
+                text: ' Oh.. yea...',
+                nextText: 0.07
+            }
+        ]
+    },
+    {
+        id: 5.07,
+        text: '"Chevvy, cheงงฯ, ¢hēงงฯ, n̶o̶o̶o̶o̶o̶o̶!',
+        options: [
+            {
+                text: 'Back into the world you, this time infront of a Gingerale.',
+                nextText: 7
+            }
+        ]
+    },
+
+    //6 Sprit Endind
+    {
+        id: 6,
+        text: 'Sprit Man: "I can teach you if you want"',
+        options: [
+            {
+                text: 'Teach me? Teach me what?',
+                nextText: 6.01
+            },
+            {
+                text: 'Nah I\'m good just impressed',
+                nextText: 6.02
+            }
+        ]
+    },
+    {
+        id: 6.01,
+        text: 'Sprit Man: "TO GET THIS YOLKED!"',
+        options: [
+            {
+                text: 'Oh bettt',
+                nextText: 6.03
+            },
+            {
+                text: 'Ya know, thanks but I\'ll have to pass',
+                nextText: 6.02
+            }
+        ]
+    },
+    {
+        id: 6.02,
+        text: 'Sprit Man: "Suit yourself"',
+        options: [
+            {
+                text: 'Sorry man, another time maybe',
+                nextText: 0.08
+            }
+        ]
+    },
+    {
+        id: 6.03,
+        text: 'Sprit Man: "Drink this!" (he hand you a glass of purple liquid)',
+        options: [
+            {
+                text: 'I have this thing, I don\'t drink random fluid from strangers',
+                nextText: 6.04
+            },
+            {
+                text: 'Sure thing!',
+                nextText: .09
+            }
+        ]
+    },
+    {
+        id: 6.04,
+        text: 'Sprit Man: "Smart rule. This is grape juice though" (he offers a different glass)',
+        options: [
+            {
+                text: 'Ehhh, I\'ll have to pass.',
+                nextText: 6.02
+            },
+            {
+                text: 'Say less',
+                nextText: 6.05
+            }
+        ]
+    },
+    {
+        id: 6.05,
+        text: 'You guzzle the glass down and begin feeling blood course throughout your body',
+        options: [
+            {
+                text: 'Whoa',
+                nextText: 6.06
+            }
+        ]
+    },
+    {
+        id: 6.06,
+        text: 'Sprit Man: "Good isn\'t it?"',
+        options: [
+            {
+                text: 'I feel... god-like',
+                nextText: 6.07
+            },
+            {
+                text: 'What was that stuff?',
+                nextText: 6.08
+            }
+        ]
+    },
+    {
+        id: 6.07,
+        text: 'Sprit Man: "Join me, I plan to replant the earth and need people with the physique of titans like yourself"',
+        options: [
+            {
+                text: 'I- I can\'t. I\'m sorry',
+                nextText: 6.09
+            },
+            {
+                text: 'I would be glad to',
+                nextText: 0.1
+            }
+        ]
+    },
+    {
+        id: 6.08,
+        text: 'Sprit Man: "Does it matter?"',
+        options: [
+            {
+                text: 'Yes, I have to know',
+                nextText: 6.09
+            },
+            {
+                text: 'I guess not. Imma beef cake',
+                nextText: 6.07
+            }
+        ]
+    },
+    {
+        id: 6.09,
+        text: 'Sprit Man: "We could have been so successful, so happy. But you had to be subborn"',
+        options: [
+            {
+                text: 'What was that drink?',
+                nextText: 6.1
+            },
+            {
+                text: 'Your not going to get away with this!',
+                nextText: 6.11
+            }
+        ]
+    },
+    {
+        id: 6.1,
+        text: 'Sprit Man: "It was truely grape juice, taken from the only juice box left alive"',
+        options: [
+            {
+                text: 'you monster!',
+                nextText: 6.12
+            },
+            {
+                text: 'Lung at him',
+                nextText: 6.13
+            },
+            {
+                text: 'Meh',
+                nextText: 0.1
+            }
+        ]
+    },
+    {
+        id: 6.11,
+        text: 'Sprit Man: "Planting enough trees to save the earth?"',
+        options: [
+            {
+                text: 'Yes I mean no, the part about you being a monster',
+                nextText: 6.12
+            },
+            {
+                text: 'When you put it that way',
+                nextText: 0.1
+            }
+        ]
+    },
+    {
+        id: 6.12,
+        text: 'Sprit Man: "I am not proud of what i\'ve done, but it was a necessary evil." (He attacks at you)',
+        options: [
+            {
+                text: 'Wait no, I\'ll help you!',
+                nextText: 0.1
+            },
+            {
+                text: 'Prepare to fight',
+                nextText: 6.13
+            }
+        ]
+    },
+    {
+        id: 6.13,
+        text: '(Sprit Man telegraphs a right hook)',
+        options: [
+            {
+                text: 'Block Left',
+                nextText: 6.14
+            },
+            {
+                text: 'Block Right',
+                nextText: 0.11
+            }
+        ]
+    },
+    {
+        id: 6.14,
+        text: 'The momentum leaves him defenseless for a second',
+        options: [
+            {
+                text: 'Give him a smooch',
+                nextText: 6.15
+            },
+            {
+                text: 'Attack him',
+                nextText: 0.13
+            }
+        ]
+    },
+    {
+        id: 6.15,
+        text: 'Sprit Man: "Whoah, I realize the errors of my ways."',
+        options: [
+            {
+                text: 'You can do better',
+                nextText: 6.16
+            },
+        ]
+    },
+    {
+        id: 6.16,
+        text: 'Sprit Man: "You\'re right!" (He frees the juice box and build 23 school\'s and hospitals in impoverished nations)',
+        options: [
+            {
+                text: 'I did a great thing',
+                nextText: 0.12
+            }
+        ]
+    },
+
+
+    {
+        id: 7,
+        text:'Gingerale: "Hello my name is Gingerale"',
+        options: [
+            {
+                text: 'smack him',
+                nextText: .15
+            },
+            {
+                text: 'hello',
+                nextText: 7.1
+            }
+        ]
+    },
+    {
+        id: 7.1,
+        text: 'Gingerale: "I don\'t care, you are beneath me"',
+        options: [
+            {
+                text: 'SMACK HIM',
+                nextText: .15
+            },
+            {
+                text: 'Let him go',
+                nextText:.16
+            }
+        ]
+    }
+
+
+
+
+    // 0= deaths  1= begging   2 = bobless, 3 = with bob, 4 = Bob ending  5 = WAKE UP, special 6 = Sprit ending  7 = Gingerale
+
+
+
+
+]
+    
 
 startGame()
 
-]
+
