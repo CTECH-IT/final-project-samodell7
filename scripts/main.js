@@ -927,7 +927,7 @@ const textNodes = [
         },
         {
             id: 4.04,
-            text: 'You and Bob walk to the resturant making small talk as you walk',
+            text: 'You and Bob walk to the restaurant making small talk as you walk',
             options: [
                 {
                     text: '...',
